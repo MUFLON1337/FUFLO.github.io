@@ -1,0 +1,34 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: deepskyblue;
+}
+.page {
+    max-width: 1600px;
+    min-height: 100vh;
+    background-color: aquamarine;
+    margin: 0 auto;
+    padding: 50px 100px 50px;
+}
+.lob {
+    width: 200px;
+    transition: 1s;
+}
+.btn {
+    margin: 50px 50px;
+    padding: 10px 10px;
+    font-size: 30px;
+    color: fuchsia;
+    background-color: blueviolet;
+    border-radius: 15px;
+}
+.btn:hover {
+    background-color: black;
+    color: blueviolet;
+}
+.btn:hover ~ .lob {
+    transform: scale(0.5) translate(600px, 0px) rotate(360deg);
+}
